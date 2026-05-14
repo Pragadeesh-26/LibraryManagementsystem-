@@ -1,0 +1,100 @@
+:root {
+  --primary-blue: #2563eb;
+  --dark-navy: #0f172a;
+  --text-main: #ffffff;
+}
+
+body {
+  background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), 
+              url('D:/Visual Studio/Project/LibraryManagement/LibraryManagement/src/component/Library.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* --- HOME PAGE STYLE --- */
+.home-container {
+  padding: 30px 50px;
+}
+
+h2.home-main-title {
+  color: #ffffff !important;
+  font-weight: 800;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.genre-title {
+  color: #ffffff !important;
+  background-color: var(--primary-blue);
+  padding: 6px 20px;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.vault-scroll-container {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding: 10px 5px 30px 5px; /* Added padding to prevent shadow clipping */
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-blue) rgba(255,255,255,0.1);
+}
+
+/* Home Page Card Specifics */
+.vault-card {
+  min-width: 200px;
+  max-width: 200px;
+  background: white !important;
+  border-radius: 12px;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.vault-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+
+.vault-card .card-title {
+  color: #0f172a !important; /* Forces title to be dark/visible */
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  white-space: normal; /* Allows title to wrap if long */
+}
+
+/* --- FORM PAGES (Add Book, Add Member, etc.) --- */
+.page-center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+  min-height: 90vh;
+}
+
+.form-card, .details-card {
+  background: white !important;
+  padding: 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 1000px; 
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+/* Dark text only for form/detail pages */
+.form-card *, .details-card * {
+  color: #0f172a !important;
+}
+
+.btn-primary, .btn-dark {
+  color: white !important; /* Keep buttons readable */
+}

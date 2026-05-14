@@ -46,13 +46,14 @@ Bash
 npm install
 npm run dev
 
-###📊 Database Schema
-###The system utilizes a relational schema involving:
+📊 Database Schema
 
-* **user_data: Credentials and roles.
+The system utilizes a relational schema involving:
 
-* **books: Inventory and stock count.
+* user_data: Credentials and roles.
 
-* **borrow_records: Loan history and fine status.
+* books: Inventory and stock count.
 
-* **library_cards: Member privileges.
+* borrow_records: Loan history and fine status.
+
+* library_cards: Member privileges.
